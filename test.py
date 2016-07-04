@@ -14,5 +14,8 @@ class TestStringMethods(unittest.TestCase):
 		with self.assertRaises(TypeError):
 			s.split(2)
 
+	def test_cat(self):
+		self.assertEquals("foo"+"bar", "foobar")
+
 if __name__ == '__main__':
 	unittest.main()
